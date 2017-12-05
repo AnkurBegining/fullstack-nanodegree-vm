@@ -16,6 +16,8 @@
             <br>
             {{item.description}}
         </h5>
+        <a href="{{ url_for('editMenuItem', restaurant_id = restaurant.id, menu_id = item.id) }}">Edit</a>
+        <a href="{{ url_for('deleteMenuItem', restaurant_id = restaurant.id, menu_id = item.id) }}">Delete</a>
     {% endfor %}
 </body>
 </html>

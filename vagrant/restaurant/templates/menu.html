@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>
+        {{restaurant.name}}
+    </h1>
+    {% for item in items %}
+       <h3>
+            {{item.name}}
+        </h3>
+        <h5>
+            {{item.price}}
+            <br>
+            {{item.description}}
+        </h5>
+    {% endfor %}
+</body>
+</html>

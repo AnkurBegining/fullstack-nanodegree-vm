@@ -7,6 +7,13 @@
     <h1>
         {{restaurant.name}}
     </h1>
+    <br>
+    <h2>
+        <a href="{{ url_for('newMenuItem', restaurant_id = restaurant.id ) }}">
+            Create new Menu Item
+        </a>
+
+    </h2>
     {% for item in items %}
        <h3>
             {{item.name}}
